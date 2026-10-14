@@ -5,6 +5,7 @@ Welcome to the monitoring script documentation for the Linux SOC Laboratory. Thi
 1. User Account Monitor (user_monitor.sh)
 
 Overview
+
 The user_monitor.sh script audits system account configurations, identifies privilege structures, tracks active sessions, and compares current user lists against a pre-established baseline to spot unauthorized user creation.   
 
 Key Checks Performed
@@ -18,6 +19,7 @@ Key Checks Performed
 2. SSH Security Monitor (ssh_monitor.sh)
 
 Overview
+
 The ssh_monitor.sh script parses authentication logs to track brute-force attacks, invalid username attempts, successful remote logins, and source IP frequencies targeting the Secure Shell daemon.   
 
 Key Checks Performed
@@ -30,6 +32,7 @@ Key Checks Performed
 3. Process Monitor (process_monitor.sh)
 
 Overview
+
 The process_monitor.sh script investigates running system processes, isolates high-resource consumption, detects execution from unauthorized temporary directories, and maps process lineage.   
 
 Key Checks Performed
@@ -41,6 +44,7 @@ Key Checks Performed
 4. Cron Job Monitor (cron_monitor.sh)
 
 Overview
+
 The cron_monitor.sh script audits scheduled tasks across user crontabs, system-wide configuration files, and standard cron directories to detect persistence mechanisms.   
 Key Checks Performed
 - User & Root Crontabs: Dumps active scheduled tasks for standard users and root via crontab -l.   
