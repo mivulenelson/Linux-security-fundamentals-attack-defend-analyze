@@ -1,0 +1,22 @@
+==================================
+		SSH SECURITY MONITOR
+		Wed Oct 14 02:48:40 PM EAT 2026
+==================================
+
+[1] Failed SSH passwords
+2026-10-14T13:54:36.291998+03:00 L391LNinj1 sudo: l391lninj1 : TTY=pts/0 ; PWD=/home/l391lninj1/linux-soc-lab ; USER=root ; COMMAND=/usr/bin/grep -c 'Failed password' /var/log/auth.log
+2026-10-14T13:58:12.325722+03:00 L391LNinj1 sudo: l391lninj1 : TTY=pts/0 ; PWD=/home/l391lninj1/linux-soc-lab ; USER=root ; COMMAND=/usr/bin/grep -c 'Failed password' /var/log/auth.log
+2026-10-14T14:48:40.631292+03:00 L391LNinj1 sudo: l391lninj1 : TTY=pts/0 ; PWD=/home/l391lninj1/linux-soc-lab ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+
+[2] Invalid SSH users
+2026-10-14T14:48:40.649546+03:00 L391LNinj1 sudo: l391lninj1 : TTY=pts/0 ; PWD=/home/l391lninj1/linux-soc-lab ; USER=root ; COMMAND=/usr/bin/grep 'Invalid user' /var/log/auth.log
+
+[3] Successful SSH logins
+2026-10-14T14:48:40.672249+03:00 L391LNinj1 sudo: l391lninj1 : TTY=pts/0 ; PWD=/home/l391lninj1/linux-soc-lab ; USER=root ; COMMAND=/usr/bin/grep sshd.*Accepted /var/log/auth.log
+
+[4] Failed login count
+Failed SSH attempts recorded: 4
+
+[5] Top source IP addresses
+      3 -c
+      2 COMMAND=/usr/bin/grep
